@@ -1,6 +1,6 @@
-# seattle-201d48
+# seattle-201d50
 
-Class repo for seattle-201d56 with lead instructor Lena Eivy.
+Class repo for seattle-201d50 with lead instructor Lena Eivy.
 
 Course schedule:
 
