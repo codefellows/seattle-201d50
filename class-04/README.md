@@ -5,8 +5,8 @@
 ## Today's Schedule
 - Announcements
 	- Keep in mind that the quizzes are open-book, so do use the resources you choose to figure out the answers: books, internet, JS console in your browser, whatever. And remember that the quizzes are preparing you for the 301 entrance exam, which you will take after the last class and right before Project Week.
-	-  Reminder: Weekly surveys will go out to students in email. Your survey responses are very helpful and meaningful to us. Feedback is a gift.
-	- Partner Power Hour Today
+	-  Reminder: Weekly surveys will be available this weekend in canvas. Your survey responses are very helpful and meaningful to us. Feedback is a gift.
+	- 401 instructor panel is today at 12:15 - be there!
 	- The instructor will have a 15-minute one-on-one meeting with each student during the coming week: this will be an opportunity to review your progress, answer any questions you have, and discuss any topics the instructor sees appropriate, such as your future plans in the program. We will start the process of scheduling those meetings very soon.
 - Code Review *[45 minutes]:*
 - [CSS layout](#css) *[45 minutes]:*
