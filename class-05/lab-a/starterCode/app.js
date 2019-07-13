@@ -51,6 +51,8 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
+var sumOne = sum(a, b);
+var sumTwo = sum(sumOne, c);
 
 }
 
