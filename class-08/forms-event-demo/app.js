@@ -13,20 +13,21 @@
 
 // simple form event listener
 
-var formEl = document.getElementById('form');
-formEl.addEventListener('submit', handleClick);
+// var formEl = document.getElementById('form');
+// formEl.addEventListener('submit', handleClick);
 
-function handleClick(e){
-  // MUST do this if your event is submit
-  e.preventDefault();
+// function handleClick(event){
+//   // MUST do this if your event is submit
+//   event.preventDefault();
   
-  if(event.target.username){
-    console.log('the event.target is ', event.target);
-    console.log('the event.target.username is ', event.target.username);
-    console.log('the event.target.textContent is ', event.target.textContent);
-    console.log('the event.target.username.value is ', event.target.username.value);
-  }
-}
+//   if(event.target.username){
+//     // console.log('the event.target is ', event.target);
+//     // console.log('the event.target.username is ', event.target.username);
+//     // console.log('the event.target.textContent is ', event.target.textContent);
+//     // console.log('the event.target.username.value is ', event.target.username.value);
+//     // var userName = event.target.username.value;
+//   }
+// }
 
 // contact form event listener
 
