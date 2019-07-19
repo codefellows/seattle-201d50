@@ -32,4 +32,20 @@ As a result of completing Lecture 10 of Code 201, students will:
 - p.484: Debugging tips
 - p.485: Common errors
 
+
+### Samples of Prior 201 Projects
+
+- [Safe Camp](http://www.safe-camp.org/)
+- [Dev's Demise](https://michaeljahns.github.io/cardGame/index.html)
+- [Happy Home Task Manager](https://ljjolley.github.io/201-Final-Project/)
+- [Play FETCH](https://deliman206.github.io/fetch/)
+- [Let's Play WAR](https://jesslovell.github.io/card-game-war/)
+- [SANDMAN](https://zahram1087.github.io/Sandman/)
+- [Ocean Commotion](http://www.oceancommotion.fun/index.html)
+- [Cultivate](https://michaelageorge.github.io/Cultivate/)
+- [Packing Planner](https://niesssiobhan.github.io/packing-planner/)
+
+[-top-](#top)
+
+
 [-top-](#top)
