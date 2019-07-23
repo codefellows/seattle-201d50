@@ -4,14 +4,9 @@ var imageOneEl = document.getElementById('cat-one');
 var imageTwoEl = document.getElementById('cat-two');
 var catContainerEl = document.getElementById('cat-container');
 
-// imageOneEl.src = 'img/boxCat.jpg';
-// imageOneEl.alt = 'Box Cat';
-// imageOneEl.title = 'Box Cat';
-
-// imageTwoEl.src = 'img/chargingCat.jpg';
-// imageTwoEl.alt = 'Charging Cat';
-// imageTwoEl.title = 'Charging Cat';
-
+var namesArray = [];
+var catVotes = [];
+var votesRemaining = 5;
 var recentRandomNumbers = [];
 var allCats = [];
 
@@ -32,6 +27,7 @@ new Cat('outsideCat');
 new Cat('sleepyCat');
 new Cat('tomatoCat');
 new Cat('yogaCat');
+
 
 function render(){
   var randomIndex = getUniqueIndex();
@@ -73,9 +69,65 @@ function getUniqueIndex(){
   return randomIndex;
 }
 
+function generateArrays(){
+  for(var i = 0; i < allCats.length; i++){
+    namesArray.push(allCats[i].name);
+    catVotes.push(allCats[i].votes);
+  }
+}
+
+function generateChart(){
+  var ctx = document.getElementById('myChart').getContext('2d');
+  var myChart = new Chart(ctx, {
+      type: 'bar',
+      data: {
+          labels: namesArray,
+          datasets: [{
+              label: '# of Votes',
+              data: catVotes,
+              backgroundColor: [
+                  'rgba(10, 10, 10, 1)',
+                  'rgba(54, 162, 235, 0.2)',
+                  'rgba(255, 206, 86, 0.2)',
+                  'rgba(75, 192, 192, 0.2)',
+                  'rgba(153, 102, 255, 0.2)',
+                  'rgba(255, 159, 64, 0.2)'
+              ],
+              borderColor: [
+                  'rgba(255, 99, 132, 1)',
+                  'rgba(54, 162, 235, 1)',
+                  'rgba(255, 206, 86, 1)',
+                  'rgba(75, 192, 192, 1)',
+                  'rgba(153, 102, 255, 1)',
+                  'rgba(255, 159, 64, 1)'
+              ],
+              borderWidth: 10
+          }]
+        },
+      options: {
+          scales: {
+              yAxes: [{
+                  ticks: {
+                      beginAtZero: true
+                  }
+              }]
+          }
+      }
+  });         
+}
+
+// event handler function
 function handleClick(){
   var chosenImg = event.target.title;
+  votesRemaining--;
 
+  if(votesRemaining === 0){
+    // stop event listener
+    catContainerEl.removeEventListener('click', handleClick);
+    // render the list - chart.js
+    generateArrays();
+    generateChart();
+  }
   for(var i = 0; i < allCats.length; i++){
     if(allCats[i].name === chosenImg){
       allCats[i].votes++;
@@ -84,6 +136,9 @@ function handleClick(){
   render();
 }
 
+// event listener
 catContainerEl.addEventListener('click', handleClick);
 
 render();
+
+
