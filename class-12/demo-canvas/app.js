@@ -87,11 +87,3 @@ function handleClick(){
 catContainerEl.addEventListener('click', handleClick);
 
 render();
-
-
-
-
-
-
-
-
